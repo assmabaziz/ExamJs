@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--========================================================= Font Awesome =============================================-->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!--========================================================= Bootsrap =================================================-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!--========================================================= Style CSS ================================================-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <title></title>
+</head>
+
+<body class="bg-black">
+  <nav id="sideBar" class="bg-black d-flex">
+    <div id="sideBarLinks" class="d-flex flex-column justify-content-between py-4">
+      <ul class="list-unstyled mt-5">
+        <li class="mb-3 ms-4"><a href="#" class="text-capitalize text-decoration-none text-white" id="search">search</a>
+        </li>
+        <li class="mb-3 ms-4"><a href="#" class="text-capitalize text-decoration-none text-white"
+            id="categories">categories</a>
+        </li>
+        <li class="mb-3 ms-4"><a href="#" class="text-capitalize text-decoration-none text-white" id="area">area</a>
+        </li>
+        <li class="mb-3 ms-4"><a href="#" class="text-capitalize text-decoration-none text-white"
+            id="ingredients">ingredients</a>
+        </li>
+        <li class="mb-3 ms-4"><a href="#" class="text-capitalize text-decoration-none text-white" id="contctUs">contct
+            us</a></li>
+      </ul>
+      <div id="sideBarLinksFooter">
+        <div class="sideBarLinksFooterIcons">
+          <i class="fa-brands fa-facebook text-white"></i>
+          <i class="fa-brands fa-twitter text-white"></i>
+          <i class="fa-solid fa-globe text-white"></i>
+        </div>
+        <div class="sideBarLinksFooterCopyRight">
+          <p class="text-capitalize text-white">copyright a© 2019 all rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div id="sideBarIcons" class="d-flex flex-column justify-content-between align-items-center py-4 bg-white h-100">
+      <img src="./images/logo.png" alt="logo">
+      <div class="open-close-icons text-center">
+        <i class="fa-solid fa-bars fa-3x" id="openMenu"></i>
+        <i class="fa-solid fa-xmark fa-3x" id="closeMenu"></i>
+      </div>
+      <div class="other-icons d-flex flex-column gap-2">
+        <span>
+          <i class="fa-solid fa-globe fa-xl text-dark"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-share-nodes fa-xl text-dark"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container py-5">
+      <section id="meals">
+        <div class="content">
+          <div class="row gy-4" id="myCards">
+
+          </div>
+        </div>
+      </section>
+      <section id="details" class="text-white">
+        <div class="row" id="detailsMeal">
+          <div class="col-md-4">
+            <img src="./images/logo.png" alt="">
+            <h2 class="text-capitalize">title</h2>
+          </div>
+          <div class="col-md-8">
+
+            <h2 class="text-capitalize">instructions</h2>
+            <p>
+              STEP 1 TO MAKE SUSHI ROLLS: Pat out some rice. Lay a nori sheet on the mat, shiny-side down. Dip your
+              hands in the vinegared water, then pat handfuls of rice on top in a 1cm thick layer, leaving the furthest
+              edge from you clear. STEP 2 Spread over some Japanese mayonnaise. Use a spoon to spread out a thin layer
+              of mayonnaise down the middle of the rice. STEP 3 Add the filling. Get your child to top the mayonnaise
+              with a line of their favourite fillings – here we’ve used tuna and cucumber. STEP 4 Roll it up. Lift the
+              edge of the mat over the rice, applying a little pressure to keep everything in a tight roll. STEP 5 Stick
+              down the sides like a stamp. When you get to the edge without any rice, brush with a little water and
+              continue to roll into a tight roll. STEP 6 Wrap in cling film. Remove the mat and roll tightly in cling
+              film before a grown-up cuts the sushi into thick slices, then unravel the cling film. STEP 7 TO MAKE
+              PRESSED SUSHI: Layer over some smoked salmon. Line a loaf tin with cling film, then place a thin layer of
+              smoked salmon inside on top of the cling film. STEP 8 Cover with rice and press down. Press about 3cm of
+              rice over the fish, fold the cling film over and press down as much as you can, using another tin if you
+              have one. STEP 9 Tip it out like a sandcastle. Turn block of sushi onto a chopping board. Get a grown-up
+              to cut into fingers, then remove the cling film. STEP 10 TO MAKE SUSHI BALLS: Choose your topping. Get a
+              small square of cling film and place a topping, like half a prawn or a small piece of smoked salmon, on
+              it. Use damp hands to roll walnut-sized balls of rice and place on the topping. STEP 11 Make into tight
+              balls. Bring the corners of the cling film together and tighten into balls by twisting it up, then unwrap
+              and serve.
+            </p>
+            <span>
+              <h2 class="text-capitalize">area: japanese</h2>
+            </span>
+            <span>
+              <h2 class="text-capitalize">cat: seafood</h2>
+            </span>
+            <div class="recipes">
+              <span class="text-capitalize">300ml sushi rice</span>
+            </div>
+            <div class="tags">
+              <h2 class="text-capitalize">tags:</h2>
+              <button class="btn btn-success  text-capitalize" id="btnSource">source</button>
+              <button class="btn btn-danger  text-capitalize" id="btnYoutube">youtube</button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sectionSearch" class="py-4">
+        <form action="#" class="w-75 mx-auto mb-5">
+          <div class="d-flex gap-3 bg-black">
+            <input type="text" id="searchByName" class="form-control w-50 bg-black py-2 rounded-2 text-white"
+              placeholder="search by name">
+            <input type="text" id="searchByFirstLetter" class="form-control w-50 bg-black py-2 rounded-2 text-white"
+              placeholder="search by first letter">
+          </div>
+        </form>
+        <div class="row gy-4" id="resultSearchByName">
+
+        </div>
+      </section>
+      <section id="categoriesData" class="d-none">
+        <div class="row gy-4" id="catBox">
+        </div>
+      </section>
+      <section id="AreaData" class=" w-75 mx-auto">
+        <div class="row" id="areaBox">
+        </div>
+      </section>
+      <section id="IngredientsData" class=" w-75 mx-auto d-none">
+        <div class="row" id="ingredientsBox">
+        </div>
+      </section>
+      <section id="contactData" class=" w-75 mx-auto py-5 vh-100">
+        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+          <form action="#" class="w-100">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control w-100 mb-3" placeholder="Enter Your Name" id="userNane">
+                <div class="alert alert-danger w-100 alert-name pt-2  mb-3">
+                  <p>user name should more than 3 and less  10</p>
+                </div>
+                <input type="number" class="form-control w-100  mb-3" placeholder="Enter Your Phone" id="phone">
+                <div class="alert alert-danger w-100 alert-phone pt-2  mb-3">
+                  <p>phone number : 0123456789</p>
+                </div>
+                <input type="password" class="form-control w-100  mb-3" placeholder="Enter Your Password" id="Password">
+                <div class="alert alert-danger w-100 alert-password pt-2">
+                  <p>At least one capital letter please and some numbers </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control w-100  mb-3" placeholder="Enter Your Email" id="email">
+                <div class="alert alert-danger w-100 alert-email pt-2 ">
+                  <p>user email : example@example</p>
+                </div>
+                <input type="number" class="form-control w-100  mb-3" placeholder="Enter Your Age" id="age">
+                <div class="alert alert-danger w-100 alert-age pt-2">
+                  <p>age: 18-99</p>
+                </div>
+                <input type="password" class="form-control w-100  mb-3" placeholder="repassword" id="repassword">
+                <div class="alert alert-danger w-100 alert-repassword pt-2  mb-3">
+                  <p>password and repassword should be identical</p>
+                </div>
+              </div>
+`            </div>
+            <button class="btn btn-outline-danger d-block mx-auto disabled" id="btnSubmit" role="button">submit</button>
+          </form>
+        </div>
+      </section>
+      <span class="loader position-absolute top-50 start-50 "></span>
+    </div>
+  </main>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/jquery-3.7.1.min.js"></script>
+  <script type="module" src="./JS/script.js"></script>
+</body>
+
+</html>
